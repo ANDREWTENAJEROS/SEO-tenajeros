@@ -20,6 +20,9 @@ app.get('/index2.html', function(req, res){
 app.get('/index3.html', function(req, res){
   res.sendFile(path.join(__dirname, 'views/index3.html'));
 });
+app.get('/index4.html', function(req, res){
+  res.sendFile(path.join(__dirname, 'views/index4.html'));
+});
 
 //express server listen
 var server = app.listen(app.get('port'), function(){
