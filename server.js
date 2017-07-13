@@ -23,6 +23,10 @@ app.get('/index3.html', function(req, res){
 app.get('/index4.html', function(req, res){
   res.sendFile(path.join(__dirname, 'views/index4.html'));
 });
+app.get('/google2fb0676a13153cb4.html', function(req, res){
+  res.sendFile(path.join(__dirname, 'views/google2fb0676a13153cb4.html'));
+});
+
 
 //express server listen
 var server = app.listen(app.get('port'), function(){
