@@ -29,8 +29,8 @@ app.get('/index5.html', function(req, res){
 app.get('/google2fb0676a13153cb4.html', function(req, res){
   res.sendFile(path.join(__dirname, 'views/google2fb0676a13153cb4.html'));
 });
-app.get('sitemap.xml', function(req, res){
-  res.sendFile(path.join(__dirname, 'sitemap.xml'));
+app.get('/sitemap.xml', function(req, res){
+  res.sendFile(path.join(__dirname, 'views/sitemap.xml'));
 });
 
 
