@@ -611,7 +611,7 @@ $hamburger-spacing:8px;
   -o-filter: blur(5px);
   -ms-filter: blur(5px);
   filter: blur(5px);
-  width: 100%;
-  height: 500px;
+width: 1440px;
+  height: 900px;
   background-color: #ccc;
 }
