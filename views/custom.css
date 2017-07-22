@@ -601,8 +601,8 @@ $hamburger-spacing:8px;
 
 .thumbnail iframe {
   
-  width: 1440px;
-  height: 900px;
+  width: 2000px;
+  height: 400px;
 }
 
 .blur-content iframe{
@@ -611,7 +611,7 @@ $hamburger-spacing:8px;
   -o-filter: blur(5px);
   -ms-filter: blur(5px);
   filter: blur(5px);
-width: 1440px;
-  height: 900px;
+width: 2000px;
+  height: 400px;
   background-color: #ccc;
 }
