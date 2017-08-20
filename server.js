@@ -26,6 +26,9 @@ app.get('/index4.html', function(req, res){
 app.get('/index5.html', function(req, res){
   res.sendFile(path.join(__dirname, 'views/index5.html'));
 });
+app.get('/index6.html', function(req, res){
+  res.sendFile(path.join(__dirname, 'views/index6.html'));
+});
 app.get('/google2fb0676a13153cb4.html', function(req, res){
   res.sendFile(path.join(__dirname, 'views/google2fb0676a13153cb4.html'));
 });
