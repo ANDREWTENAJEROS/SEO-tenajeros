@@ -38,9 +38,12 @@ header {
     -
 }
 
+.blur-bg{
+  background-image: url('https://vlvzja.bn1302.livefilestore.com/y4mA_EmZhqv_hMhpBz8Srw9JBLRznMLPN5kxhbRSdL2IgJk6gL6UfQNo2N3imjWX9v1HCpTY9iYAUAlW4B_VF-L4uhU1n0dVX7bPIDkgzInm2pRqY7B5ITs_LIq7RbIb8lLTd_B_TXFySwNLhC9J_t1ABAfX6_9xOfJm-w60MZj0UqKdAuDGx495syMQ0w1d0Uu7I42b4rj5wKD31MgzLpohw?width=8201&height=5450&cropmode=none');
+}
 
 .page-bg {
-  background: url('http://www.turtlecontent.com/wp-content/uploads/2016/09/search.jpg');
+  background: url('https://vlvzja.bn1302.livefilestore.com/y4mA_EmZhqv_hMhpBz8Srw9JBLRznMLPN5kxhbRSdL2IgJk6gL6UfQNo2N3imjWX9v1HCpTY9iYAUAlW4B_VF-L4uhU1n0dVX7bPIDkgzInm2pRqY7B5ITs_LIq7RbIb8lLTd_B_TXFySwNLhC9J_t1ABAfX6_9xOfJm-w60MZj0UqKdAuDGx495syMQ0w1d0Uu7I42b4rj5wKD31MgzLpohw?width=8201&height=5450&cropmode=none');
   -webkit-filter: blur(5px);
   -moz-filter: blur(5px);
   -o-filter: blur(5px);
@@ -601,8 +604,8 @@ $hamburger-spacing:8px;
 
 .thumbnail iframe {
   
-  width: 1440px;
-  height: 900px;
+  width: 2000px;
+  height: 400px;
 }
 
 .blur-content iframe{
@@ -611,7 +614,7 @@ $hamburger-spacing:8px;
   -o-filter: blur(5px);
   -ms-filter: blur(5px);
   filter: blur(5px);
-width: 1440px;
-  height: 900px;
+width: 2000px;
+  height: 400px;
   background-color: #ccc;
 }

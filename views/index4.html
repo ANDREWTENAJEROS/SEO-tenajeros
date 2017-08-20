@@ -14,7 +14,6 @@
     
 
 </head>
-
 <body>
  <!-- Navigation -->
     <nav id="siteNav" class="navbar navbar-default navbar-fixed-top affix-top" role="navigation">
@@ -71,8 +70,7 @@
     </header>
 <div class="page-bg"></div>
 	<!-- Intro Section -->
-    <section class="intro" style="
-    height: 540px;
+    <section class="intro"
 ">
         <div class="container">
             <div class="row">
@@ -80,14 +78,247 @@
                 	
                     <h2 class="section-heading">HTTP Status Codes</h2>
                     <p class="text-light">The Status-Code element in a server response, is a 3-digit integer where the first digit of the Status-Code defines the class of response and the last two digits do not have any categorization role.</p>
+                    <hr>
+<p>here are the http status codes from tutorialspoint.com</p>
+<a href="https://www.tutorialspoint.com/http/http_status_codes.htm">HTTP - Status Codes</a>
+<table class="table table-bordered">
+<tbody><tr>
+<th>S.N.</th>
+<th>Code and Description</th>
+</tr>
+<tr>
+<td>1</td>
+<td><b>1xx: Informational</b><p> It means the request has been received and the process is continuing.</p></td>
+</tr>
+<tr>
+<td>2</td>
+<td><b>2xx: Success</b><p> It means  the action was successfully received, understood, and accepted.</p></td>
+</tr>
+<tr>
+<td>3</td>
+<td><b>3xx: Redirection</b><p> It means further action must be taken in order to complete the request.</p></td>
+</tr>
+<tr>
+<td>4</td>
+<td><b>4xx: Client Error</b><p> It means the request contains incorrect syntax or cannot be fulfilled.</p></td>
+</tr>
+<tr>
+<td>5</td>
+<td><b>5xx: Server Error</b><p> It means the server failed to fulfill an apparently valid request.</p></td>
+</tr>
+</tbody></table>
+<p>HTTP status codes are extensible and HTTP applications are not required to understand the meaning of all the registered status codes. Given below is a list of all the status codes.</p>
+<h2>1xx: Information</h2>
+<table class="table table-bordered">
+  <tbody><tr>
+    <th>Message</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>100 Continue</td>
+    <td> Only a part of the request has been received by the server, but as long as it has not been rejected, the client should continue with the request.</td>
+  </tr>
+  <tr>
+    <td>101 Switching Protocols</td>
+    <td>The server switches protocol.</td>
+  </tr>
+</tbody></table>
+<h2>2xx: Successful</h2>
+<table class="table table-bordered">
+  <tbody><tr>
+    <th>Message</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>200 OK</td>
+    <td>The request is OK.</td>
+  </tr>
+  <tr>
+    <td>201 Created</td>
+    <td>The request is complete, and a new resource is created&nbsp;.</td>
+  </tr>
+  <tr>
+    <td>202 Accepted</td>
+    <td>The request is accepted for processing, but the processing is not complete.
+    </td>
+  </tr>
+  <tr>
+    <td>203 Non-authoritative Information</td>
+    <td>The information in the entity header is from a local or third-party copy, not from the original server.</td>
+  </tr>
+  <tr>
+    <td>204 No Content</td>
+    <td>A status code and a header are given in the response, but there is no entity-body in the reply.</td>
+  </tr>
+  <tr>
+    <td>205 Reset Content</td>
+    <td>The browser should clear the form used for this transaction for additional input.</td>
+  </tr>
+  <tr>
+    <td>206 Partial Content</td>
+    <td>The server is returning partial data of the size requested. Used in response to a request specifying a <i>Range</i> header. The server must specify the range included in the response with the <i>Content-Range</i> header.</td>
+  </tr>
+</tbody></table>
+<h2>3xx: Redirection</h2>
+<table class="table table-bordered">
+  <tbody><tr>
+    <th>Message</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>300 Multiple Choices</td>
+    <td>A link list. The user can select a link and go to that location. Maximum five addresses &nbsp;.</td>
+  </tr>
+  <tr>
+    <td>301 Moved Permanently</td>
+    <td>The requested page has moved to a new url&nbsp;.
+    </td>
+  </tr>
+  <tr>
+    <td>302 Found</td>
+    <td>The requested page has moved temporarily to a new url&nbsp;.</td>
+  </tr>
+  <tr>
+    <td>303 See Other</td>
+    <td>The requested page can be found under a different url&nbsp;.</td>
+  </tr>
+  <tr>
+    <td>304 Not Modified</td>
+    <td>This is the response code to an <i>If-Modified-Since</i> or <i>If-None-Match</i> header, where the URL has not been modified since the specified date.</td>
+  </tr>
+  <tr>
+    <td>305 Use Proxy</td>
+    <td>The requested URL must be accessed through the proxy mentioned in the <i>Location</i> header.</td>
+  </tr>
+  <tr>
+    <td>306 <i>Unused</i></td>
+    <td>This code was used in a previous version. It is no longer used, but the code is reserved.</td>
+  </tr>
+  <tr>
+    <td>307 Temporary Redirect</td>
+    <td>The requested page has moved temporarily to a new url.
+    </td>
+  </tr>
+</tbody></table>
+<h2>4xx: Client Error</h2>
+<table class="table table-bordered">
+  <tbody><tr>
+    <th>Message</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>400&nbsp;Bad Request</td>
+    <td>The server did not understand the request.</td>
+  </tr>
+  <tr>
+    <td>401 Unauthorized</td>
+    <td>The requested page needs a username and a password.</td>
+  </tr>
+  <tr>
+    <td>402 Payment Required</td>
+    <td><i>You can not use this code yet</i>.</td>
+  </tr>
+  <tr>
+    <td>403 Forbidden</td>
+    <td>Access is forbidden to the requested page.</td>
+  </tr>
+  <tr>
+    <td>404 Not Found</td>
+    <td>The server can not find the requested page.</td>
+  </tr>
+  <tr>
+    <td>405 Method Not Allowed</td>
+    <td>The method specified in the request is not allowed.</td>
+  </tr>
+  <tr>
+    <td>406 Not Acceptable</td>
+    <td>The server can only generate a response that is not accepted by the client.</td>
+  </tr>
+  <tr>
+    <td>407 Proxy Authentication Required</td>
+
+    <td>You must authenticate with a proxy server before this request can be served.</td>
+  </tr>
+  <tr>
+    <td>408 Request Timeout</td>
+    <td>The request took longer than the server was prepared to wait.</td>
+  </tr>
+  <tr>
+    <td>409 Conflict</td>
+    <td>The request could not be completed because of a conflict.</td>
+  </tr>
+  <tr>
+    <td>410 Gone</td>
+    <td>The requested page is no longer available&nbsp;.</td>
+  </tr>
+  <tr>
+    <td>411 Length Required</td>
+    <td>The "Content-Length" is not defined. The server will not accept the request without it&nbsp;.</td>
+  </tr>
+  <tr>
+    <td>412 Precondition Failed</td>
+    <td>The pre condition given in the request evaluated to false by the server.</td>
+  </tr>
+  <tr>
+    <td>413 Request Entity Too Large</td>
+    <td>The server will not accept the request, because the request entity is too large.</td>
+  </tr>
+  <tr>
+    <td>414 Request-url Too Long</td>
+    <td>The server will not accept the request, because the url is too long. Occurs when you convert a "post" request to a "get" request with a long query information&nbsp;.</td>
+  </tr>
+  <tr>
+    <td>415 Unsupported Media Type</td>
+    <td>The server will not accept the request, because the mediatype is not supported&nbsp;.</td>
+  </tr>
+  <tr>
+    <td>416 Requested Range Not Satisfiable</td>
+    <td>The requested byte range is not available and is out of bounds.</td>
+  </tr>
+  <tr>
+    <td>417 Expectation Failed</td>
+    <td>The expectation given in an Expect request-header field could not be met by this server.</td>
+  </tr>
+</tbody></table>
+<h2>5xx: Server Error</h2>
+<table class="table table-bordered">
+  <tbody><tr>
+    <th>Message</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>500&nbsp;Internal Server Error</td>
+    <td>The request was not completed. The server met an unexpected condition.</td>
+  </tr>
+  <tr>
+    <td>501 Not Implemented</td>
+    <td>The request was not completed. The server did not support the functionality required.</td>
+  </tr>
+  <tr>
+    <td>502 Bad Gateway</td>
+    <td>The request was not completed. The server received an invalid response from the upstream server.</td>
+  </tr>
+  <tr>
+    <td>503 Service Unavailable</td>
+    <td>The request was not completed. The server is temporarily overloading or down.</td>
+  </tr>
+  <tr>
+    <td>504 Gateway Timeout</td>
+    <td>The gateway has timed out.</td>
+  </tr>
+  <tr>
+    <td>505 HTTP Version Not Supported</td>
+    <td>The server does not support the "http protocol" version.</td>
+  </tr>
+</tbody></table>
+
                 </div>
             </div>
         </div>
     </section>
 
 	<!-- Content 1 -->
-    <section class="content" style="
-    height: 500px;
+    <section class="content"
 ">
         <div class="container">
             <div class="row">
@@ -113,27 +344,27 @@
                      <ul class="collapsible" data-collapsible="accordion">
     <li>
       <div class="collapsible-header"><h2>Title tag</h2></div>
-      <div class="collapsible-body"><span><h3>answer goes here</h3></span></div>
+      <div class="collapsible-body"><span><h3>One of the single most important optimization element for the website. This is the headline represented in the Search Engine Result Page.</h3></span></div>
     </li>
     <li>
       <div class="collapsible-header"><h2>Meta Description</h2></div>
-      <div class="collapsible-body"><span><h3>answer goes here</h3></span></div>
+      <div class="collapsible-body"><span><h3>These are snippets of texts that describes the page content. Meta tags don’t appear on the page.</h3></span></div>
     </li>
     <li>
       <div class="collapsible-header"><h2>Image</h2></div>
-      <div class="collapsible-body"><span><h3>answer goes here</h3></span></div>
+      <div class="collapsible-body"><span><h3>This improves the content of the website itself. It’s an additional information for the user.</h3></span></div>
     </li>
     <li>
       <div class="collapsible-header"><h2>Text Link</h2></div>
-      <div class="collapsible-body"><span><h3>answer goes here</h3></span></div>
+      <div class="collapsible-body"><span><h3>Placing internal links can make the visitors navigate in the site.</h3></span></div>
     </li>
     <li>
       <div class="collapsible-header"><h2>NoFollwed Link</h2></div>
-      <div class="collapsible-body"><span><h3>answer goes here</h3></span></div>
+      <div class="collapsible-body"><span><h3>A link that does not count as a point in the page’s favor , does not boost the page rank, and this doesn’t help in the Search engine result page.</h3></span></div>
     </li>
     <li>
       <div class="collapsible-header"><h2>Image Link</h2></div>
-      <div class="collapsible-body"><span><h3>answer goes here</h3></span></div>
+      <div class="collapsible-body"><span><h3>This is an alternative for an image. It gives a link that will pop an image from a source.</h3></span></div>
     </li>
     
   </ul>
@@ -144,8 +375,7 @@
             </div>
         </div>
     </section>    
-    <section class="content" style="
-    height: 500px;
+    <section class="content"
 ">
         <div class="container">
             <div class="row">
@@ -154,7 +384,7 @@
                 </div>
                 <div class="col-sm-8">
                     <h2 class="section-header">SEO's hyperlinking best practices</h2>
-                    <h3>There are best practices in SEO hyperlinking. The first one is to Create lots of contents. In order to have lots of links , you need to have many internal pages. The second one is to Use anchor text. The internal links should use anchor text as opposed to linked images. The third one is Link Deep you should avoid links to the top level pages on the website. The fourth one is that Use links that are natural for the reader.The link value that gets distributed throughout the site is secondary to this key point. The fifth one is that you should Use relevant links. You should link to relevant content in your internal linking. The sixth one is to Use follow links. Follow links are the best way to build out all the internal link architecture of the content marketing. The last one is to Use a reasonable number of internal links. You really don’t need a lot of internal links in your internal content.</h3>
+                    <h3>There are best practices in SEO hyperlinking. The first one is to Create lots of contents. </h3><h3>In order to have lots of links , you need to have many internal pages. The second one is to Use anchor text. The internal links should use anchor text as opposed to linked images. The third one is Link Deep you should avoid links to the top level pages on the website. The fourth one is that Use links that are natural for the reader.The link value that gets distributed throughout the site is secondary to this key point. The fifth one is that you should Use relevant links. You should link to relevant content in your internal linking. The sixth one is to Use follow links. Follow links are the best way to build out all the internal link architecture of the content marketing. The last one is to Use a reasonable number of internal links. You really don’t need a lot of internal links in your internal content.</h3>
                     
                 </div>                
                 
@@ -189,5 +419,11 @@
   ga('send', 'pageview');
 
 </script>
-
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-9197878935414975",
+    enable_page_level_ads: true
+  });
+</script>
 </body></html>
