@@ -29,6 +29,19 @@ app.get('/index5.html', function(req, res){
 app.get('/index6.html', function(req, res){
   res.sendFile(path.join(__dirname, 'views/index6.html'));
 });
+app.get('/story1.html', function(req, res){
+  res.sendFile(path.join(__dirname, 'views/story1.html'));
+});
+app.get('/story2.html', function(req, res){
+  res.sendFile(path.join(__dirname, 'views/story2.html'));
+});
+app.get('/story3.html', function(req, res){
+  res.sendFile(path.join(__dirname, 'views/story3.html'));
+});
+app.get('/story4.html', function(req, res){
+  res.sendFile(path.join(__dirname, 'views/story4.html'));
+});
+
 app.get('/google2fb0676a13153cb4.html', function(req, res){
   res.sendFile(path.join(__dirname, 'views/google2fb0676a13153cb4.html'));
 });
