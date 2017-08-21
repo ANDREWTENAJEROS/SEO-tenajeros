@@ -41,7 +41,6 @@ app.get('/story3.html', function(req, res){
 app.get('/story4.html', function(req, res){
   res.sendFile(path.join(__dirname, 'views/story4.html'));
 });
-
 app.get('/google2fb0676a13153cb4.html', function(req, res){
   res.sendFile(path.join(__dirname, 'views/google2fb0676a13153cb4.html'));
 });
