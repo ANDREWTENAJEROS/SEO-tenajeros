@@ -47,7 +47,9 @@ app.get('/google2fb0676a13153cb4.html', function(req, res){
 app.get('/sitemap.xml', function(req, res){
   res.sendFile(path.join(__dirname, 'views/sitemap.xml'));
 });
-
+app.get('stories.css', function(req, res){
+  res.sendFile(path.join(__dirname, 'views/stories.css'));
+});
 
 //express server listen
 var server = app.listen(app.get('port'), function(){
