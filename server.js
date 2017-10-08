@@ -41,6 +41,30 @@ app.get('/story3.html', function(req, res){
 app.get('/story4.html', function(req, res){
   res.sendFile(path.join(__dirname, 'views/story4.html'));
 });
+
+app.get('/content.html', function(req, res){
+  res.sendFile(path.join(__dirname, 'views/content.html'));
+});
+app.get('/content1.html', function(req, res){
+  res.sendFile(path.join(__dirname, 'views/content1.html'));
+});
+app.get('/content2.html', function(req, res){
+  res.sendFile(path.join(__dirname, 'views/content2.html'));
+});
+app.get('/content3.html', function(req, res){
+  res.sendFile(path.join(__dirname, 'views/content3.html'));
+});
+app.get('/content4.html', function(req, res){
+  res.sendFile(path.join(__dirname, 'views/content4.html'));
+});
+app.get('/content5.html', function(req, res){
+  res.sendFile(path.join(__dirname, 'views/content5.html'));
+});
+app.get('/content6.html', function(req, res){
+  res.sendFile(path.join(__dirname, 'views/content6.html'));
+});
+
+
 app.get('/google2fb0676a13153cb4.html', function(req, res){
   res.sendFile(path.join(__dirname, 'views/google2fb0676a13153cb4.html'));
 });
